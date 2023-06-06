@@ -63,7 +63,7 @@ class Character implements Fighter {
   }
 
   get energy(): Energy {
-    return this._energy;
+    return { ...this._energy };
   }
 
   attack(enemy: Fighter | SimpleFighter): void {
